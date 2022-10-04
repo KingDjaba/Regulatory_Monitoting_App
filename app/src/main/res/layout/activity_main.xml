@@ -11,8 +11,8 @@
         android:id="@+id/textField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name of Institution"
-        android:layout_margin="20dp">
+        android:hint="Business name"
+        android:layout_margin="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -25,8 +25,25 @@
         android:id="@+id/NameAgenttextField"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Name of IT Head"
-        android:layout_margin="20dp">
+        android:hint="Physical Address"
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+
+            android:inputType="textPostalAddress" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/DigitalAddtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ghana Post Digital Address. eg: GX-XXX-XXXX"
+        android:layout_margin="10dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -35,5 +52,90 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Phonetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone number"
+        android:layout_margin="10dp"
+        android:inputType="textPhonetic">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/NoEmployeetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Number of Employee"
+        android:inputType="number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/TINtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Tax ID Number. eg: P0012345678"
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Datetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="mm/dd/yyyy"
+        android:layout_margin="10dp"
+        android:inputType="date">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/Facilitiestext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Office and service facilities"
+        android:layout_margin="10dp"
+        android:inputType="textMultiLine"
+        android:gravity="start|top">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:id="@+id/elevatedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save &amp; Continue"
+        android:layout_gravity="end"
+        android:layout_margin="10dp"
+        />
 
 </androidx.appcompat.widget.LinearLayoutCompat>
