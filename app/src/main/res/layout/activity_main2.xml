@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/BusinessTypetext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="-- Select Business Type --"
+        corporation
+            partnership
+                sole proprietorship
+        android:layout_margin="10dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/NoYearsInBusinesstext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="1"
+        android:layout_margin="10dp"
+        android:inputType="number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/FirmtextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Firm Specialiation"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:id="@+id/SelecttextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please select at least one specialization category."
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <CheckBox
+            android:id="@+id/SoftwarecheckBox"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Business and productivity software and licensing services" />
+
+        <TextView
+            android:id="@+id/PricetextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GH₵ 250.00"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+    <CheckBox
+        android:id="@+id/ConsultancycheckBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Information technology consultancy and services" />
+
+    <TextView
+        android:id="@+id/Price1textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GH₵ 250.00"
+        android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+    <CheckBox
+        android:id="@+id/RentalcheckBox"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Leasing or rental services for ICT equipment" />
+
+        <TextView
+            android:id="@+id/Price2textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GH₵ 250.00"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <CheckBox
+            android:id="@+id/ConsumercheckBox"
+            android:layout_width="301dp"
+            android:layout_height="wrap_content"
+            android:text="Consumer electronic equipment" />
+
+        <TextView
+        android:id="@+id/Price3textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GH₵ 200.00"
+        android:layout_margin="5dp"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <CheckBox
+            android:id="@+id/MiscellaneouscheckBox"
+            android:layout_width="302dp"
+            android:layout_height="wrap_content"
+            android:text="Miscellaneous ICT components and goods" />
+
+        <TextView
+            android:id="@+id/Price4textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GH₵ 250.00"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <CheckBox
+            android:id="@+id/CommunicationscheckBox"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:text="Communications equipment" />
+
+    <TextView
+        android:id="@+id/Price5textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GH₵ 100.00"
+        android:layout_margin="5dp"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="5dp">
+
+        <CheckBox
+            android:id="@+id/ComputercheckBox"
+            android:layout_width="303dp"
+            android:layout_height="wrap_content"
+            android:text="Computers &amp; peripheral equipment" />
+
+    <TextView
+        android:id="@+id/Price6textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GH₵ 100.00"
+        android:layout_margin="5dp"/>
+</LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
